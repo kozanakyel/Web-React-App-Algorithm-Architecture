@@ -1,30 +1,12 @@
-import React, { useContext } from 'react';
+import React, { Fragment } from 'react';
 
-import Login from './components/Login/Login';
-import Home from './components/Home/Home';
-import MainHeader from './components/MainHeader/MainHeader';
-import AuthContext from './store/auth-context';
-
+import Header from "./components/Layout/Header";
 
 function App() {
-
-  const ctx = useContext(AuthContext)
-
-  /**
-   * We can use Context provider via the 2 ways:
-   * 1-Consumer and the other is 2-React Hooks 
-   * 
-   */
-
   return (
-    <React.Fragment>
-      <MainHeader />
-      <main>
-        {!ctx.isLoggedIn && <Login />}
-        {ctx.isLoggedIn && <Home />}
-      </main>
-    </React.Fragment>
-
+    <Fragment>
+      <Header />
+    </Fragment>
   );
 }
 
