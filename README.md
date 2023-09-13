@@ -3,6 +3,8 @@
 This repo includes my review and practise about rasct features learning by me.
 It mostly shows and related to Maximiliann React courses and assignments. I will follow this procedure and i use same repo for my works.
 
+There is more then one project for React-apps.
+
 Which topics cover:
 - React Hooks
 - useContext, ReactContext
