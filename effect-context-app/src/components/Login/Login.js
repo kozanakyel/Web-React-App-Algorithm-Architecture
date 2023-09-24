@@ -33,6 +33,7 @@ const passwordReducer = (state, action) => {
 };
 
 const Login = (props) => {
+  // alttaki useSaetleri useReducer ile kullandik....
   // const [enteredEmail, setEnteredEmail] = useState('');
   // const [emailIsValid, setEmailIsValid] = useState();
   // const [enteredPassword, setEnteredPassword] = useState('');

@@ -7,7 +7,9 @@ const defaultCartState = {
     totalAmount: 0,
 };
 
-const cartReducer = (state, action) => {
+// bu reducer fonksiyonu useReducer kullanmak ve state i tespit edip dispatch ile tekrar sevketdip logic yaratmak icin...
+const cartReducer = (state, action) => {   // !!!state is readonly property, and you must not use state.age+=state.age ???
+    // action represents changed value focus on!!!!
     if (action.type === 'ADD') {
         const updatedTotalAmount =
             state.totalAmount + action.item.price * action.item.amount;

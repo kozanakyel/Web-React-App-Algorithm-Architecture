@@ -35,7 +35,7 @@ export const AuthContextProvider = (props) => {
         onLogin: loginHandler,
       }}
     >
-      {props.children}
+      {props.children}    {/* burada diger component ve pagerler bulunur */}
     </AuthContext.Provider>
   );
 };
