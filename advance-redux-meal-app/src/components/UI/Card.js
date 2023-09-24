@@ -5,7 +5,7 @@ const Card = (props) => {
     <section
       className={`${classes.card} ${props.className ? props.className : ''}`}
     >
-      {props.children}
+      {props.children}{/** for new components loaction */}
     </section>
   );
 };

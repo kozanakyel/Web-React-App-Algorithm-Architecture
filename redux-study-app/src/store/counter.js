@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialCounterState = { counter: 0, showCounter: true };
 
 const counterSlice = createSlice({
+  // Redux toolkitin farki state i direk degistirebiliyporuz....  action.payload unutma.....!
   name: 'counter',
   initialState: initialCounterState,
   reducers: {
